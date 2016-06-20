@@ -37,10 +37,10 @@ void send_recv(int i, fd_set *master, int sockfd, int fdmax)
 	//Connect to database
 	  MYSQL *connect;
 	  connect=mysql_init(NULL);
-	  if (!connect)
-	  {
-		printf("MySQL Initialization is failed \n");
-	  }
+	 //  if (!connect)
+	 //  {
+		// printf("MySQL Initialization is failed \n");
+	 //  }
 	  connect=mysql_real_connect(connect, "localhost", "root", "H@nh1321" , "chatHistory" ,3306,NULL,0);
 	  if (connect){ 
 	  	printf("Connection is successful\n"); 
